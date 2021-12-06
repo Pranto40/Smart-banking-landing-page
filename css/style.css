@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@200;400;600;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+section{
+    padding: 3rem 9%;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 8rem;
+	scroll-behavior: smooth; 
+}
+
+.header {
+	position: sticky;
+    right: 0;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	 z-index: 1000; 
+	background: #E5E5E5;
+    padding: 2rem 9%;
+}
+
+#menu_btn{
+    font-size: 3rem;
+    color: #443;
+    cursor: pointer;
+    display: none;
+}
+
+.header .logo{
+    font-size: 2.3rem;
+}
+.header .logo i{
+    padding-left: .5rem;
+}
+
+.header .navbar ul{
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .navbar ul li{
+    margin: 0 1.5rem;
+}
+
+.header .navbar ul li a{
+    font-size: 1.4rem;
+    color: #404041;
+    font-weight: 500;
+    font-style: normal;
+}
+.header .navbar ul li a:hover{
+	color: rgb(122, 122, 7);
+    border-bottom: .1rem solid #443;
+	padding-bottom: .5rem;
+}
+
+/* home section */
+
+.home {
+    background: #E5E5E5;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.home .content{
+    flex: 1 1 42rem;
+}
+.home .content h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 8rem;
+    color: #222223;
+    font-weight: 700;
+    line-height: 8rem;
+    letter-spacing: -1%;
+}
+.home .content p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.01em;
+    color: #535354;
+    margin: 3rem 0;
+}
+
+.home .content .btn{
+    font-family: 'Roboto', sans-serif;
+   display: block;
+   font-size: 1.9rem;
+}
+.home .content .btn i {
+	height: 50px;
+	width: 50px;
+	background: #222223;
+	box-shadow: 0px 10px 30px rgba(206, 206, 206, 0.6);
+	font-size: 2rem;
+	color: #fff;
+	line-height: 5rem;
+	padding: 0 1.5rem;
+}
+
+.home .content .btn span{
+    padding: 0 1.3rem;
+    color: #222223;
+}
+
+.home .image{
+    flex: 1 1 42rem;
+}
+.home .image img{
+    width: 100%;
+}
+
+/* group section */
+
+.group{
+    background: #E5E5E5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.group .box{
+    border-radius: 1rem;
+    background: var(--light-bg);
+    padding: 4rem 3rem;
+}
+.group .box h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    color:  #222223;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-style: normal;
+    font-weight: bold;
+}
+.group .box h1 img{
+    height: 3rem;
+    padding-left: .6rem;
+}
+.group .box p{
+    font-family: 'Roboto', sans-serif;
+    color: #5F5F64;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+    line-height: 2.6rem;
+    padding: 1.5rem 0;
+}
+
+.group .box h3{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #17181A;
+    letter-spacing: 0.01em;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    padding-top: 1.5rem;
+}
+
+/* frame section */
+
+.frame{
+    background: #52C0FF;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+ .frame .content{
+    padding: 10rem;
+} 
+
+.frame .content h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: #202020;
+    width: 264px;
+    height: 76px;
+    left: 300px;
+    top: 169px;
+}
+.frame .content p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.02em;
+    color: #5F5F64;
+    width: 256px;
+    height: 52px;
+    left: 300px;
+    top: 261px;
+}
+
+/* testimonial section */
+
+.testimonial{
+    background: #E5E5E5;
+}
+
+.testimonial .content{
+    text-align: center;
+    padding: 9rem 0;
+}
+
+.testimonial h1 {
+	font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8rem;
+    line-height: 8rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #0D1111;
+
+}
+
+.testimonial p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #767E7E;
+    padding: 2.5rem 0;
+}
+
+.testimonial .box_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+}
+
+.testimonial .box{
+    border: 1.2px solid #909C92;
+    padding: 3rem 2rem;
+}
+
+.testimonial .box:first-child{
+    border-left: none;
+}
+.testimonial .box:last-child{
+    border-right: none;
+}
+
+.testimonial .box h2{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.4em;
+    color: #718176;
+
+}
+.testimonial .box h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+/* feature section */
+
+.feature {
+    background: #E5E5E5;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 13rem 9%;
+}
+
+.feature .card{
+    flex: 1 1 42rem;
+}
+.feature .card img{
+    width: 100%;
+}
+.feature .card_content{
+    flex: 1 1 42rem;
+}
+.feature .card_content h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    letter-spacing: -0.01em;
+    color: #192430;
+}
+.feature .card_content p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+
+.feature .group1 {
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+	gap: 4rem;
+}
+
+.feature .group1 .group_img{
+    padding: 1.5rem;
+    background: #fff;
+    box-shadow: 0px 28px 60px rgba(152, 152, 152, 0.15);
+    border-radius: 50%;
+}
+.feature .group1 .group_img img{
+    height: 3rem;
+    width: 3rem;
+}
+.feature .group1 .group_content h3{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #222222;
+}
+.feature .group1 .group_content p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #727272;
+}
+
+
+/* newsletter section */
+
+.newsletter{
+    background: #52C0FF;
+}
+
+.newsletter .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.newsletter .row .play_text h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.01em;
+    color: #414449;
+    margin-bottom: 3rem;
+}
+.newsletter .row .play_text h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 7rem;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 5rem;
+}
+.newsletter .row .play_text .btn{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+    background: #E15C19;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+}
+
+
+
+
+/* footer section */
+
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #E5E5E5;
+    padding: 0 9%; 
+    flex-wrap: wrap;
+}
+
+.footer .logo{
+    font-size: 2.3rem;
+}
+
+.footer .menu ul{
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer .menu ul li{
+    margin: 0 1.5rem;
+}
+
+.footer .menu ul li a{
+    font-size: 1.4rem;
+    color: #404041;
+    font-weight: 500;
+    font-style: normal;
+}
+.footer .menu ul li a:hover{
+	color: rgb(122, 122, 7);
+    border-bottom: .1rem solid #443;
+	padding-bottom: .5rem;
+}
+
+.login{
+    padding: 5rem 0;
+}
+
+.login .btn{
+    font-size: 1.4rem;
+    padding: 0 1.5rem;
+    color: #404041;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2rem;
+    letter-spacing: 0.01em;
+}
+
+
+.last {
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+    padding: 0 9%;
+    padding-bottom: 4rem;
+    background: #E5E5E5;
+}
+
+.last h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: rgba(27, 27, 27, 0.35);
+}
+.last span{
+    min-width: 40vw;
+    height: 0px;
+    border: 1px solid #565B58;
+    margin-top: .6rem;
+}
+
+
