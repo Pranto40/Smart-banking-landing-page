@@ -127,9 +127,21 @@ html {
 
 .home .image{
     flex: 1 1 42rem;
+    padding-top: 6rem;
 }
-.home .image img{
-    width: 100%;
+
+.home .image img {
+	width: 100%;
+	animation: float 8s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-5rem);
+    }
 }
 
 /* group section */
