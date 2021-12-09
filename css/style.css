@@ -317,7 +317,7 @@ html {
 }
 .feature .card img{
     width: 100%;
-    animation: float 8s linear infinite;
+    animation: float 7s linear infinite;
 }
 
 @keyframes float{
