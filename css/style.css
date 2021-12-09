@@ -317,7 +317,23 @@ html {
 }
 .feature .card img{
     width: 100%;
+    animation: float 8s linear infinite;
 }
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-5rem);
+    }
+}
+
+
+
+
+
+
 .feature .card_content{
     flex: 1 1 42rem;
 }
@@ -445,6 +461,19 @@ html {
 .newsletter .row .play_text .btn:hover::after{
     width: 100%;
     border-radius: .5rem;
+}
+
+.play_text img{
+    animation: float 8s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-5rem);
+    }
 }
 
 
