@@ -17,8 +17,8 @@ section{
 
 html {
 	font-size: 62.5%;
-	overflow-x: hidden;
-	scroll-padding-top: 8rem;
+	 overflow-x: hidden;
+	scroll-padding-top: 8rem; 
 	scroll-behavior: smooth; 
 }
 
@@ -78,6 +78,7 @@ html {
     background: #E5E5E5;
 	display: flex;
 	align-items: center;
+    justify-content: center;
 	flex-wrap: wrap;
 	gap: 2rem;
 }
@@ -128,11 +129,12 @@ html {
 .home .image{
     flex: 1 1 42rem;
     padding-top: 6rem;
+    padding-left: 2rem;
 }
 
-.home .image img {
-	width: 100%;
-	animation: float 8s linear infinite;
+.home .image img{
+    width: 100%;
+    animation: float 4s linear infinite;
 }
 
 @keyframes float{
@@ -142,7 +144,9 @@ html {
     50%{
         transform: translateY(-5rem);
     }
-}
+} 
+
+
 
 /* group section */
 
@@ -305,8 +309,11 @@ html {
 /* feature section */
 
 .feature {
+    min-height: 100vh;
     background: #E5E5E5;
 	display: flex;
+    align-items: center;
+    justify-content: center;
 	flex-wrap: wrap;
 	gap: 2rem;
 	padding: 13rem 9%;
@@ -317,7 +324,7 @@ html {
 }
 .feature .card img{
     width: 100%;
-    animation: float 7s linear infinite;
+    animation: float 4s linear infinite;
 }
 
 @keyframes float{
@@ -327,11 +334,7 @@ html {
     50%{
         transform: translateY(-5rem);
     }
-}
-
-
-
-
+}  
 
 
 .feature .card_content{
@@ -464,7 +467,8 @@ html {
 }
 
 .play_text img{
-    animation: float 8s linear infinite;
+    padding-top: 4rem;
+    animation: float 4s linear infinite;
 }
 
 @keyframes float{

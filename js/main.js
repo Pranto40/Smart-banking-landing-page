@@ -13,6 +13,16 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 };
 
+// kursor cdn js
+
 new kursor({
     type: 1
-})
+});
+
+// scroll cdn js
+
+AOS.init({
+    offset: 20,
+    duration: 1000,
+});
+
